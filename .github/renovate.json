@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "config:semverAllWeekly"
+  ],
+  "addLabels": ["dependencies"],
+  "packageRules": [
+    {
+      "groupName": "java",
+      "matchManagers": [
+        "maven",
+        "maven-wrapper"
+      ],
+      "rangeStrategy": "auto"
+    }
+  ],
+  "minimumReleaseAge": "7 days"
+}
